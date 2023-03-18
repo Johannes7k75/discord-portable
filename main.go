@@ -49,7 +49,7 @@ func main() {
 	app.Process = utl.PathJoin(electronAppPath, "Discord.exe")
 	app.Args = []string{
 		"--user-data-dir=" + app.DataPath,
-		"--bd-data-dir=" + app.DataPath + "/.."
+		"--bd-data-dir=" + app.DataPath + "/..",
 	}
 	app.WorkingDir = electronAppPath
 
